@@ -1,11 +1,13 @@
 import PyPDF2
 import spacy
+import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from termcolor import colored  # For highlighting text in terminal
 
 # Load Spacy NLP model
 nlp = spacy.load("en_core_web_sm")
+nltk.download("stopwords")
 
 def extract_text_from_pdf(file_path):
     pdf_file_obj = open(file_path, 'rb')
