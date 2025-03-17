@@ -1,2 +1,5 @@
-python -m spacy download en_core_web_sm
-python -m nltk.downloader stopwords
+#python -m spacy download en_core_web_sm
+#python -m nltk.downloader stopwords
+
+python -m spacy download en_core_web_sm --direct
+python -c "import nltk; nltk.download('stopwords')"
