@@ -5,5 +5,3 @@ PyPDF2
 nltk
 spacy
 scikit-learn
-
-!pip list
